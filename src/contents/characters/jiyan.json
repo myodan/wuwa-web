@@ -1,0 +1,8 @@
+{
+  "id": "jiyan",
+  "name": "기염",
+  "gender": "남",
+  "attribute": "aero",
+  "rarity": 5,
+  "portrait": "../images/characters/portraits/jiyan.png"
+}

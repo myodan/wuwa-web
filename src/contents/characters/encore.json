@@ -1,0 +1,8 @@
+{
+  "id": "encore",
+  "name": "앙코",
+  "gender": "여",
+  "attribute": "fusion",
+  "rarity": 5,
+  "portrait": "../images/characters/portraits/encore.png"
+}

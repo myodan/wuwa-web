@@ -1,0 +1,8 @@
+{
+  "id": "calcharo",
+  "name": "카카루",
+  "gender": "남",
+  "attribute": "conducto",
+  "rarity": 5,
+  "portrait": "../images/characters/portraits/calcharo.png"
+}

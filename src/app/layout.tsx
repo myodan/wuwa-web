@@ -1,0 +1,31 @@
+import { type Metadata } from "next";
+import { Noto_Sans_KR } from "next/font/google";
+
+import { Header } from "~/components/header";
+import { Provider } from "~/components/provider";
+
+const notoSans = Noto_Sans_KR({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "WuWa",
+  description: "",
+};
+
+type Props = {
+  children: React.ReactNode;
+};
+
+const RootLayout = ({ children }: Props) => {
+  return (
+    <html lang="ko" suppressHydrationWarning>
+      <body className={notoSans.className}>
+        <Provider>
+          <Header />
+          {children}
+        </Provider>
+      </body>
+    </html>
+  );
+};
+
+export default RootLayout;

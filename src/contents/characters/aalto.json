@@ -1,0 +1,8 @@
+{
+  "id": "aalto",
+  "name": "알토",
+  "gender": "남",
+  "attribute": "aero",
+  "rarity": 4,
+  "portrait": "../images/characters/portraits/aalto.png"
+}
