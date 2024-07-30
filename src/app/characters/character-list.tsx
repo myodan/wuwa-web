@@ -43,7 +43,7 @@ export const CharacterList = () => {
             itemToString={(item) => item.name}
             itemToValue={(item) => item.id}
             value={selectedAttributes}
-            onValueChange={(e) => setSelectedAttributes(e.value)}
+            onValueChange={(event) => setSelectedAttributes(event.value)}
             multiple
           >
             <Select.Control>
