@@ -1,11 +1,12 @@
 "use client";
 
 import { Grid, GridItem, HStack, Input, Select } from "@chakra-ui/react";
-import { attributes, characters } from "@contents";
 import { choseongIncludes } from "es-hangul";
 import { useState } from "react";
 
-import { CharacterCard } from "~/components/character-card";
+import { attributes, characters } from "#contents";
+
+import { CharacterCard } from "./character-card";
 
 export const CharacterList = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -66,8 +67,6 @@ export const CharacterList = () => {
         </HStack>
       </GridItem>
       {characters
-        .sort((a, b) => a.name.localeCompare(b.name))
-        .sort((a, b) => b.rarity - a.rarity)
         .filter(
           (character) =>
             (character.id.includes(searchTerm) ||
@@ -77,8 +76,10 @@ export const CharacterList = () => {
               ? selectedAttributes.includes(character.attribute)
               : true),
         )
-        .map((character, index) => (
-          <GridItem key={index}>
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) => b.rarity - a.rarity)
+        .map((character) => (
+          <GridItem key={character.id}>
             <CharacterCard character={character} />
           </GridItem>
         ))}

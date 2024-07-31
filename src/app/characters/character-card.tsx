@@ -6,11 +6,13 @@ import {
   type CardRootProps,
   Float,
   Heading,
+  Image,
   VStack,
 } from "@chakra-ui/react";
-import { attributes, type Character } from "@contents";
-import Image from "next/image";
+import NextImage from "next/image";
 import NextLink from "next/link";
+
+import { attributes, type Character } from "#contents";
 
 type Props = CardRootProps & {
   character: Character;
@@ -18,6 +20,7 @@ type Props = CardRootProps & {
 
 export const CharacterCard = ({ character, ...rest }: Props) => {
   const attribute = attributes.find((attr) => attr.id === character.attribute);
+
   return (
     <NextLink href={`/characters/${character.id}`}>
       <Card.Root width={"full"} background={"bg"} {...rest}>
@@ -33,28 +36,30 @@ export const CharacterCard = ({ character, ...rest }: Props) => {
               }
               gradientTo={character.rarity === 5 ? "orange.400" : "purple.600"}
             >
-              <Box
-                asChild
+              <Image
                 transition={"all 0.5s"}
                 _hover={{
                   scale: "1.05",
                 }}
+                asChild
               >
-                <Image
+                <NextImage
                   src={character.portrait.src}
                   width={character.portrait.width}
                   height={character.portrait.height}
                   alt={"portrait"}
                 />
-              </Box>
+              </Image>
               <Float placement={"top-start"} offset={"6"} boxSize={"10"}>
                 {attribute && (
-                  <Image
-                    src={attribute.icon.src}
-                    width={attribute.icon.width}
-                    height={attribute.icon.height}
-                    alt="attribute"
-                  />
+                  <Image asChild>
+                    <NextImage
+                      src={attribute.icon.src}
+                      width={attribute.icon.width}
+                      height={attribute.icon.height}
+                      alt="attribute"
+                    />
+                  </Image>
                 )}
               </Float>
             </Box>

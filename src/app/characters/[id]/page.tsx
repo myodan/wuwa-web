@@ -1,7 +1,8 @@
 import { Code, Container, Heading } from "@chakra-ui/react";
-import { characters } from "@contents";
 import { type Metadata } from "next";
 import { notFound } from "next/navigation";
+
+import { characters } from "#contents";
 
 type Props = {
   params: {

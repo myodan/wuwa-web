@@ -1,15 +1,8 @@
-import {
-  Button,
-  Container,
-  Flex,
-  Heading,
-  HStack,
-  Link,
-} from "@chakra-ui/react";
+import { Button, Container, Flex, Heading, HStack } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
 
-import { ColorModeButton } from "./color-mode-button";
+import { ColorModeButton } from "~/components/color-mode-button";
 
 export const Header = () => {
   return (

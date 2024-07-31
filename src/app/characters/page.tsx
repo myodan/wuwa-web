@@ -1,8 +1,5 @@
-import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
-import { characters } from "@contents";
+import { Container, Heading } from "@chakra-ui/react";
 import { type Metadata } from "next";
-
-import { CharacterCard } from "~/components/character-card";
 
 import { CharacterList } from "./character-list";
 
