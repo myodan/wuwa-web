@@ -14,6 +14,10 @@ class VeliteWebpackPlugin {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"],
+    externalDir: true,
+  },
   images: { unoptimized: true },
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin());
