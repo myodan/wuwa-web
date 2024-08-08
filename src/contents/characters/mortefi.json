@@ -4,6 +4,6 @@
   "gender": "남",
   "attribute": "fusion",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/mortefi.png",
-  "fullbody": "../images/characters/fullbody/mortefi.png"
+  "portrait": "../images/characters/portraits/mortefi.webp",
+  "fullbody": "../images/characters/fullbody/mortefi.webp"
 }

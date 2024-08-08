@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "havoc",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/taoqi.png",
-  "fullbody": "../images/characters/fullbody/taoqi.png"
+  "portrait": "../images/characters/portraits/taoqi.webp",
+  "fullbody": "../images/characters/fullbody/taoqi.webp"
 }

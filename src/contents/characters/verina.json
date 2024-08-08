@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "spectro",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/verina.png",
-  "fullbody": "../images/characters/fullbody/verina.png"
+  "portrait": "../images/characters/portraits/verina.webp",
+  "fullbody": "../images/characters/fullbody/verina.webp"
 }

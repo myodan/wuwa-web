@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "conducto",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/yinlin.png",
-  "fullbody": "../images/characters/fullbody/yinlin.png"
+  "portrait": "../images/characters/portraits/yinlin.webp",
+  "fullbody": "../images/characters/fullbody/yinlin.webp"
 }

@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "havoc",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/danjin.png",
-  "fullbody": "../images/characters/fullbody/danjin.png"
+  "portrait": "../images/characters/portraits/danjin.webp",
+  "fullbody": "../images/characters/fullbody/danjin.webp"
 }

@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "glacio",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/zhezhi.png",
-  "fullbody": "../images/characters/fullbody/yangyang.png"
+  "portrait": "../images/characters/portraits/zhezhi.webp",
+  "fullbody": "../images/characters/fullbody/yangyang.webp"
 }

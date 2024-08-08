@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "fusion",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/chixia.png",
-  "fullbody": "../images/characters/fullbody/chixia.png"
+  "portrait": "../images/characters/portraits/chixia.webp",
+  "fullbody": "../images/characters/fullbody/chixia.webp"
 }

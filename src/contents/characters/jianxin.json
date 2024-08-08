@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "aero",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/jianxin.png",
-  "fullbody": "../images/characters/fullbody/jianxin.png"
+  "portrait": "../images/characters/portraits/jianxin.webp",
+  "fullbody": "../images/characters/fullbody/jianxin.webp"
 }

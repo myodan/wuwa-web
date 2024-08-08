@@ -4,6 +4,6 @@
   "gender": "여",
   "attribute": "glacio",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/baizhi.png",
-  "fullbody": "../images/characters/fullbody/baizhi.png"
+  "portrait": "../images/characters/portraits/baizhi.webp",
+  "fullbody": "../images/characters/fullbody/baizhi.webp"
 }

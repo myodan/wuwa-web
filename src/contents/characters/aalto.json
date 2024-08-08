@@ -4,6 +4,6 @@
   "gender": "남",
   "attribute": "aero",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/aalto.png",
-  "fullbody": "../images/characters/fullbody/aalto.png"
+  "portrait": "../images/characters/portraits/aalto.webp",
+  "fullbody": "../images/characters/fullbody/aalto.webp"
 }
