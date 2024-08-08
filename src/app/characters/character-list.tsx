@@ -1,6 +1,14 @@
 "use client";
 
-import { Grid, GridItem, HStack, Input, Select } from "@chakra-ui/react";
+import {
+  Avatar,
+  Grid,
+  GridItem,
+  HStack,
+  Input,
+  Select,
+  Text,
+} from "@chakra-ui/react";
 import { choseongIncludes } from "es-hangul";
 import { useState } from "react";
 
@@ -56,8 +64,20 @@ export const CharacterList = () => {
             <Select.Positioner>
               <Select.Content>
                 {attributes.map((attribute) => (
-                  <Select.Item key={attribute.id} item={attribute}>
-                    <Select.ItemText>{attribute.name}</Select.ItemText>
+                  <Select.Item
+                    item={attribute}
+                    key={attribute.id}
+                    alignItems={"center"}
+                    justifyContent={"space-between"}
+                  >
+                    <Avatar.Root size="xs">
+                      <Avatar.Fallback>{attribute.name}</Avatar.Fallback>
+                      <Avatar.Image
+                        src={attribute.icon.src}
+                        alt={attribute.name}
+                      />
+                    </Avatar.Root>
+                    <Text flex={"1"}>{attribute.name}</Text>
                     <Select.ItemIndicator />
                   </Select.Item>
                 ))}
