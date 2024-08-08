@@ -4,5 +4,6 @@
   "gender": "여",
   "attribute": "spectro",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/jinhsi.png"
+  "portrait": "../images/characters/portraits/jinhsi.png",
+  "fullbody": "../images/characters/fullbody/jinhsi.png"
 }

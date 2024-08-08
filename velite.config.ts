@@ -17,6 +17,7 @@ const characters = defineCollection({
     id: s.unique(),
     name: s.string(),
     portrait: s.image(),
+    fullbody: s.image(),
     gender: s.string(),
     rarity: s.number().min(4).max(5),
     attribute: s.string(),

@@ -4,5 +4,6 @@
   "gender": "남",
   "attribute": "conducto",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/xiangli-yao.png"
+  "portrait": "../images/characters/portraits/xiangli-yao.png",
+  "fullbody": "../images/characters/fullbody/yangyang.png"
 }

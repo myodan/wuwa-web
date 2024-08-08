@@ -1,5 +1,6 @@
-import { Code, Container, Heading } from "@chakra-ui/react";
+import { Container, DataList, Heading, HStack, Image } from "@chakra-ui/react";
 import { type Metadata } from "next";
+import NextImage from "next/image";
 import { notFound } from "next/navigation";
 
 import { characters } from "#contents";
@@ -46,15 +47,28 @@ const Home = ({ params: { id } }: Props) => {
       gap={"4"}
     >
       <Heading fontSize={"3xl"}>캐릭터 정보</Heading>
-      <Code
-        as={"pre"}
-        fontSize={"xl"}
-        overflow={"scroll"}
-        scrollbarWidth={"none"}
-        padding={"4"}
-      >
-        {character && JSON.stringify(character, null, 2)}
-      </Code>
+      <HStack justifyContent={"space-between"}>
+        <DataList.Root orientation="horizontal">
+          {Object.entries(character)
+            .filter((item) => typeof item[1] !== "object")
+            .map((item) => (
+              <DataList.Item key={item[0]}>
+                <DataList.ItemLabel>{item[0]}</DataList.ItemLabel>
+                <DataList.ItemValue as={"pre"}>
+                  {item[1] as string}
+                </DataList.ItemValue>
+              </DataList.Item>
+            ))}
+        </DataList.Root>
+        <Image maxWidth={"xl"} asChild>
+          <NextImage
+            src={character.fullbody.src}
+            height={character.fullbody.height}
+            width={character.fullbody.width}
+            alt={"fullbody"}
+          />
+        </Image>
+      </HStack>
     </Container>
   );
 };

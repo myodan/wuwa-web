@@ -4,5 +4,6 @@
   "gender": "여",
   "attribute": "fusion",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/changli.png"
+  "portrait": "../images/characters/portraits/changli.png",
+  "fullbody": "../images/characters/fullbody/changli.png"
 }

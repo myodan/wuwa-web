@@ -4,5 +4,6 @@
   "gender": "남",
   "attribute": "glacio",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/lingyang.png"
+  "portrait": "../images/characters/portraits/lingyang.png",
+  "fullbody": "../images/characters/fullbody/lingyang.png"
 }

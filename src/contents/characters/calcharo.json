@@ -4,5 +4,6 @@
   "gender": "남",
   "attribute": "conducto",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/calcharo.png"
+  "portrait": "../images/characters/portraits/calcharo.png",
+  "fullbody": "../images/characters/fullbody/calcharo.png"
 }

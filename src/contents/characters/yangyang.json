@@ -4,5 +4,6 @@
   "gender": "여",
   "attribute": "aero",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/yangyang.png"
+  "portrait": "../images/characters/portraits/yangyang.png",
+  "fullbody": "../images/characters/fullbody/yangyang.png"
 }

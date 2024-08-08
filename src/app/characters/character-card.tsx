@@ -32,9 +32,9 @@ export const CharacterCard = ({ character, ...rest }: Props) => {
               rounded={"sm"}
               backgroundGradient={"to-r"}
               gradientFrom={
-                character.rarity === 5 ? "yellow.400" : "purple.400"
+                character.rarity === 5 ? "orange.400" : "purple.600"
               }
-              gradientTo={character.rarity === 5 ? "orange.400" : "purple.600"}
+              gradientTo={character.rarity === 5 ? "yellow.400" : "purple.400"}
             >
               <Image
                 transition={"all 0.5s"}
@@ -50,7 +50,7 @@ export const CharacterCard = ({ character, ...rest }: Props) => {
                   alt={"portrait"}
                 />
               </Image>
-              <Float placement={"top-start"} offset={"6"} boxSize={"10"}>
+              <Float placement={"top-start"} offset={"6"} boxSize={"12"}>
                 {attribute && (
                   <Image asChild>
                     <NextImage

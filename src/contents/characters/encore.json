@@ -4,5 +4,6 @@
   "gender": "여",
   "attribute": "fusion",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/encore.png"
+  "portrait": "../images/characters/portraits/encore.png",
+  "fullbody": "../images/characters/fullbody/encore.png"
 }

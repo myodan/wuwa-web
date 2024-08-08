@@ -4,5 +4,6 @@
   "gender": "남",
   "attribute": "aero",
   "rarity": 5,
-  "portrait": "../images/characters/portraits/jiyan.png"
+  "portrait": "../images/characters/portraits/jiyan.png",
+  "fullbody": "../images/characters/fullbody/jiyan.png"
 }

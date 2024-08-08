@@ -4,5 +4,6 @@
   "gender": "남",
   "attribute": "conducto",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/yuanwu.png"
+  "portrait": "../images/characters/portraits/yuanwu.png",
+  "fullbody": "../images/characters/fullbody/yuanwu.png"
 }

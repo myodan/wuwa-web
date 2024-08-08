@@ -4,5 +4,6 @@
   "gender": "여",
   "attribute": "glacio",
   "rarity": 4,
-  "portrait": "../images/characters/portraits/sanhua.png"
+  "portrait": "../images/characters/portraits/sanhua.png",
+  "fullbody": "../images/characters/fullbody/sanhua.png"
 }
