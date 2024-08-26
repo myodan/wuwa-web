@@ -10,7 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NextImage from "next/image";
-import NextLink from "next/link";
+import { Link as NextLink } from "next-view-transitions";
 
 import { attributes, type Character } from "#contents";
 

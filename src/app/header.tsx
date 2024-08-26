@@ -8,7 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { IconBrandGithub } from "@tabler/icons-react";
-import NextLink from "next/link";
+import { Link as NextLink } from "next-view-transitions";
 import React from "react";
 
 import { ColorModeButton } from "~/components/color-mode-button";
@@ -18,7 +18,9 @@ export const Header = () => {
     <Flex as={"header"} height={"16"} alignItems={"center"} background={"bg"}>
       <Container maxWidth={"7xl"}>
         <HStack justifyContent={"space-between"} gap={"4"}>
-          <Heading>WuWa</Heading>
+          <Heading>
+            <NextLink href={"/"}>WuWa</NextLink>
+          </Heading>
           <HStack flex={"1"} gap={"2"}>
             <Button variant={"ghost"} asChild>
               <NextLink href={"/"}>홈</NextLink>

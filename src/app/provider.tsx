@@ -2,6 +2,7 @@
 
 import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 import { ThemeProvider } from "next-themes";
+import { ViewTransitions } from "next-view-transitions";
 
 type Props = {
   children: React.ReactNode;
@@ -15,7 +16,7 @@ export const Provider = ({ children }: Props) => {
         disableTransitionOnChange
         defaultTheme="system"
       >
-        {children}
+        <ViewTransitions>{children}</ViewTransitions>
       </ThemeProvider>
     </ChakraProvider>
   );
