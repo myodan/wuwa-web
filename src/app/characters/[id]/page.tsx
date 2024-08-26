@@ -65,6 +65,8 @@ const Home = ({ params: { id } }: Props) => {
             src={character.fullbody.src}
             height={character.fullbody.height}
             width={character.fullbody.width}
+            blurDataURL={character.fullbody.blurDataURL}
+            placeholder="blur"
             alt={"fullbody"}
           />
         </Image>

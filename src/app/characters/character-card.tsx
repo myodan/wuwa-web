@@ -47,6 +47,8 @@ export const CharacterCard = ({ character, ...rest }: Props) => {
                   src={character.portrait.src}
                   width={character.portrait.width}
                   height={character.portrait.height}
+                  blurDataURL={character.portrait.blurDataURL}
+                  placeholder={"blur"}
                   alt={"portrait"}
                 />
               </Image>
@@ -57,6 +59,8 @@ export const CharacterCard = ({ character, ...rest }: Props) => {
                       src={attribute.icon.src}
                       width={attribute.icon.width}
                       height={attribute.icon.height}
+                      blurDataURL={attribute.icon.blurDataURL}
+                      placeholder={"blur"}
                       alt="attribute"
                     />
                   </Image>
