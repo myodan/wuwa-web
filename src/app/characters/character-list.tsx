@@ -1,18 +1,18 @@
 "use client";
 
-import {
-  Avatar,
-  Grid,
-  GridItem,
-  HStack,
-  Input,
-  Select,
-  Text,
-} from "@chakra-ui/react";
-import { choseongIncludes } from "es-hangul";
+import { Grid, GridItem, HStack, Input, Text } from "@chakra-ui/react";
+import { getChoseong } from "es-hangul";
 import { useState } from "react";
 
 import { attributes, characters } from "#contents";
+import { Avatar } from "~/components/ui/avatar";
+import {
+  SelectContent,
+  SelectItem,
+  SelectRoot,
+  SelectTrigger,
+  SelectValueText,
+} from "~/components/ui/select";
 
 import { CharacterCard } from "./character-card";
 
@@ -47,7 +47,7 @@ export const CharacterList = () => {
       </GridItem>
       <GridItem>
         <HStack>
-          <Select.Root
+          <SelectRoot
             items={attributes}
             itemToString={(item) => item.name}
             itemToValue={(item) => item.id}
@@ -55,35 +55,27 @@ export const CharacterList = () => {
             onValueChange={(event) => setSelectedAttributes(event.value)}
             multiple
           >
-            <Select.Control>
-              <Select.Trigger>
-                <Select.ValueText placeholder="속성" />
-                <Select.Indicator />
-              </Select.Trigger>
-            </Select.Control>
-            <Select.Positioner>
-              <Select.Content>
-                {attributes.map((attribute) => (
-                  <Select.Item
-                    item={attribute}
-                    key={attribute.id}
-                    alignItems={"center"}
-                    justifyContent={"space-between"}
-                  >
-                    <Avatar.Root size="xs">
-                      <Avatar.Fallback>{attribute.name}</Avatar.Fallback>
-                      <Avatar.Image
-                        src={attribute.icon.src}
-                        alt={attribute.name}
-                      />
-                    </Avatar.Root>
-                    <Text flex={"1"}>{attribute.name}</Text>
-                    <Select.ItemIndicator />
-                  </Select.Item>
-                ))}
-              </Select.Content>
-            </Select.Positioner>
-          </Select.Root>
+            <SelectTrigger>
+              <SelectValueText placeholder="속성" />
+            </SelectTrigger>
+            <SelectContent>
+              {attributes.map((attribute) => (
+                <SelectItem
+                  item={attribute}
+                  key={attribute.id}
+                  alignItems={"center"}
+                  justifyContent={"space-between"}
+                >
+                  <Avatar
+                    name={attribute.name}
+                    src={attribute.icon.src}
+                    size={"xs"}
+                  />
+                  <Text flex={"1"}>{attribute.name}</Text>
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </SelectRoot>
         </HStack>
       </GridItem>
       {characters
@@ -91,7 +83,7 @@ export const CharacterList = () => {
           (character) =>
             (character.id.includes(searchTerm) ||
               character.name.includes(searchTerm) ||
-              choseongIncludes(character.name, searchTerm)) &&
+              getChoseong(character.name).includes(searchTerm)) &&
             (selectedAttributes.length
               ? selectedAttributes.includes(character.attribute)
               : true),
