@@ -41,7 +41,7 @@ const Home = ({ params: { id } }: Props) => {
   return (
     <Container
       display={"flex"}
-      maxWidth={"container.xl"}
+      maxWidth={"7xl"}
       paddingTop={"4"}
       flexDirection={"column"}
       gap={"4"}

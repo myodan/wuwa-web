@@ -16,7 +16,7 @@ import { ColorModeButton } from "~/components/color-mode-button";
 export const Header = () => {
   return (
     <Flex as={"header"} height={"16"} alignItems={"center"} background={"bg"}>
-      <Container maxWidth={"container.xl"}>
+      <Container maxWidth={"7xl"}>
         <HStack justifyContent={"space-between"} gap={"4"}>
           <Heading>WuWa</Heading>
           <HStack flex={"1"} gap={"2"}>
