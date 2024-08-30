@@ -2,7 +2,7 @@
   "name": "wuwa-web",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "bun@1.1.25",
+  "packageManager": "bun@1.1.26",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.0.0-next.18",
+    "@chakra-ui/react": "^3.0.0-next.20",
     "@emotion/react": "^11.13.3",
     "@hookform/resolvers": "^3.9.0",
     "@tabler/icons-react": "^3.12.0",
