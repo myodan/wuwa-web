@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { type Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 
@@ -23,6 +24,7 @@ const RootLayout = ({ children }: Props) => {
           <Header />
           {children}
         </Provider>
+        <SpeedInsights />
       </body>
     </html>
   );
