@@ -1,17 +1,16 @@
 import {
-	Button,
 	Container,
 	Flex,
-	Heading,
 	HStack,
+	Heading,
 	IconButton,
 	Link,
 } from "@chakra-ui/react";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { Link as NextLink } from "next-view-transitions";
 import React from "react";
-
-import { ColorModeButton } from "~/components/color-mode-button";
+import { Button } from "~/components/ui/button";
+import { ColorModeButton } from "~/components/ui/color-mode";
 
 export const Header = () => {
 	return (
@@ -31,7 +30,7 @@ export const Header = () => {
 					</HStack>
 					<HStack>
 						<ColorModeButton />
-						<IconButton variant={"ghost"} aria-label={`Github Link`} asChild>
+						<IconButton variant={"ghost"} aria-label={"Github Link"} asChild>
 							<Link href={"https://github.com/myodan/wuwa-web"} target="_blank">
 								<IconBrandGithub />
 							</Link>

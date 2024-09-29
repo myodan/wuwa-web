@@ -3,8 +3,6 @@
 import { Grid, GridItem, HStack, Input, Text } from "@chakra-ui/react";
 import { getChoseong } from "es-hangul";
 import { useState } from "react";
-
-import { attributes, characters } from "#contents";
 import { Avatar } from "~/components/ui/avatar";
 import {
 	SelectContent,
@@ -13,7 +11,7 @@ import {
 	SelectTrigger,
 	SelectValueText,
 } from "~/components/ui/select";
-
+import { attributes, characters } from "#contents";
 import { CharacterCard } from "./character-card";
 
 export const CharacterList = () => {

@@ -1,9 +1,8 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
-
+import { Provider } from "~/components/ui/provider";
 import { Header } from "./header";
-import { Provider } from "./provider";
 
 const notoSans = Noto_Sans_KR({ subsets: ["latin"] });
 

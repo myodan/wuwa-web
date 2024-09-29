@@ -1,5 +1,5 @@
-import { Container, DataList, Heading, HStack, Image } from "@chakra-ui/react";
-import { type Metadata } from "next";
+import { Container, DataList, HStack, Heading, Image } from "@chakra-ui/react";
+import type { Metadata } from "next";
 import NextImage from "next/image";
 import { notFound } from "next/navigation";
 
@@ -13,7 +13,7 @@ type Props = {
 
 export const generateMetadata = ({
 	params: { id },
-}: Props): Metadata | void => {
+}: Props): Metadata | undefined => {
 	const character = characters.find((char) => char.id === id);
 
 	if (!character) {

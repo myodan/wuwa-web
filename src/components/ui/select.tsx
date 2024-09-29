@@ -1,38 +1,47 @@
 "use client";
 
-import { Portal, Select as ChakraSelect } from "@chakra-ui/react";
-
+import { Select as ChakraSelect, Portal } from "@chakra-ui/react";
 import { CloseButton } from "./close-button";
 
-interface SelectTriggerProps extends ChakraSelect.ControlProps {}
+interface SelectTriggerProps extends ChakraSelect.ControlProps {
+	clearable?: boolean;
+}
 
 export const SelectTrigger = (props: SelectTriggerProps) => {
-	const { children, ...rest } = props;
+	const { children, clearable, ...rest } = props;
 	return (
 		<ChakraSelect.Control {...rest}>
-			<ChakraSelect.Trigger>
-				{children}
+			<ChakraSelect.Trigger>{children}</ChakraSelect.Trigger>
+			<ChakraSelect.IndicatorGroup>
+				{clearable && <SelectClearTrigger />}
 				<ChakraSelect.Indicator />
-			</ChakraSelect.Trigger>
+			</ChakraSelect.IndicatorGroup>
 		</ChakraSelect.Control>
 	);
 };
 
-export const SelectClearTrigger = () => (
-	<ChakraSelect.ClearTrigger asChild>
-		<CloseButton size="sm" variant="plain" />
+const SelectClearTrigger = (props: ChakraSelect.ClearTriggerProps) => (
+	<ChakraSelect.ClearTrigger asChild {...props}>
+		<CloseButton
+			size="xs"
+			variant="plain"
+			focusVisibleRing="inside"
+			focusRingWidth="2px"
+			pointerEvents="auto"
+			color="fg.muted"
+		/>
 	</ChakraSelect.ClearTrigger>
 );
 
 interface SelectContentProps extends ChakraSelect.ContentProps {
 	portalled?: boolean;
-	containerRef?: React.RefObject<HTMLElement>;
+	portalRef?: React.RefObject<HTMLElement>;
 }
 
 export const SelectContent = (props: SelectContentProps) => {
-	const { portalled = true, containerRef, ...rest } = props;
+	const { portalled = true, portalRef, ...rest } = props;
 	return (
-		<Portal disabled={!portalled} container={containerRef}>
+		<Portal disabled={!portalled} container={portalRef}>
 			<ChakraSelect.Positioner>
 				<ChakraSelect.Content {...rest} />
 			</ChakraSelect.Positioner>
@@ -82,7 +91,19 @@ export const SelectRoot = (props: ChakraSelect.RootProps) => {
 	);
 };
 
+interface SelectItemGroupProps extends ChakraSelect.ItemGroupProps {
+	label: React.ReactNode;
+}
+
+export const SelectItemGroup = (props: SelectItemGroupProps) => {
+	const { children, label, ...rest } = props;
+	return (
+		<ChakraSelect.ItemGroup {...rest}>
+			<ChakraSelect.ItemGroupLabel>{label}</ChakraSelect.ItemGroupLabel>
+			{children}
+		</ChakraSelect.ItemGroup>
+	);
+};
+
 export const SelectLabel = ChakraSelect.Label;
-export const SelectItemGroup = ChakraSelect.ItemGroup;
 export const SelectItemText = ChakraSelect.ItemText;
-export const SelectItemGroupLabel = ChakraSelect.ItemGroupLabel;
