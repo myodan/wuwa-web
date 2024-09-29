@@ -9,10 +9,10 @@ import {
 	Image,
 	VStack,
 } from "@chakra-ui/react";
-import NextImage from "next/image";
 import { Link as NextLink } from "next-view-transitions";
+import NextImage from "next/image";
 
-import { attributes, type Character } from "#contents";
+import { type Character, attributes } from "#contents";
 
 type Props = CardRootProps & {
 	character: Character;

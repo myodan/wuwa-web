@@ -1,5 +1,5 @@
 import { Container, Heading } from "@chakra-ui/react";
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 
 import { CharacterList } from "./character-list";
 

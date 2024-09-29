@@ -1,4 +1,5 @@
 import {
+	Button,
 	Container,
 	Flex,
 	HStack,
@@ -8,8 +9,6 @@ import {
 } from "@chakra-ui/react";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { Link as NextLink } from "next-view-transitions";
-import React from "react";
-import { Button } from "~/components/ui/button";
 import { ColorModeButton } from "~/components/ui/color-mode";
 
 export const Header = () => {
@@ -21,9 +20,6 @@ export const Header = () => {
 						<NextLink href={"/"}>WuWa</NextLink>
 					</Heading>
 					<HStack flex={"1"} gap={"2"}>
-						<Button variant={"ghost"} asChild>
-							<NextLink href={"/"}>홈</NextLink>
-						</Button>
 						<Button variant={"ghost"} asChild>
 							<NextLink href={"/characters"}>공명자</NextLink>
 						</Button>
