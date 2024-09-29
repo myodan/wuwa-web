@@ -1,5 +1,5 @@
 {
-  "id": "conducto",
-  "name": "전류",
-  "icon": "../images/attributes/conducto.png"
+	"id": "conducto",
+	"name": "전류",
+	"icon": "../images/attributes/conducto.png"
 }

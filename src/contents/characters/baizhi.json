@@ -1,9 +1,9 @@
 {
-  "id": "baizhi",
-  "name": "설지",
-  "gender": "여",
-  "attribute": "glacio",
-  "rarity": 4,
-  "portrait": "../images/characters/portraits/baizhi.webp",
-  "fullbody": "../images/characters/fullbody/baizhi.webp"
+	"id": "baizhi",
+	"name": "설지",
+	"gender": "여",
+	"attribute": "glacio",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/baizhi.webp",
+	"fullbody": "../images/characters/fullbody/baizhi.webp"
 }

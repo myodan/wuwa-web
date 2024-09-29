@@ -1,9 +1,9 @@
 {
-  "id": "verina",
-  "name": "벨리나",
-  "gender": "여",
-  "attribute": "spectro",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/verina.webp",
-  "fullbody": "../images/characters/fullbody/verina.webp"
+	"id": "verina",
+	"name": "벨리나",
+	"gender": "여",
+	"attribute": "spectro",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/verina.webp",
+	"fullbody": "../images/characters/fullbody/verina.webp"
 }

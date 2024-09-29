@@ -1,9 +1,9 @@
 {
-  "id": "lingyang",
-  "name": "능양",
-  "gender": "남",
-  "attribute": "glacio",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/lingyang.webp",
-  "fullbody": "../images/characters/fullbody/lingyang.webp"
+	"id": "lingyang",
+	"name": "능양",
+	"gender": "남",
+	"attribute": "glacio",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/lingyang.webp",
+	"fullbody": "../images/characters/fullbody/lingyang.webp"
 }

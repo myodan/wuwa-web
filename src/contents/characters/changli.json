@@ -1,9 +1,9 @@
 {
-  "id": "changli",
-  "name": "장리",
-  "gender": "여",
-  "attribute": "fusion",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/changli.webp",
-  "fullbody": "../images/characters/fullbody/changli.webp"
+	"id": "changli",
+	"name": "장리",
+	"gender": "여",
+	"attribute": "fusion",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/changli.webp",
+	"fullbody": "../images/characters/fullbody/changli.webp"
 }

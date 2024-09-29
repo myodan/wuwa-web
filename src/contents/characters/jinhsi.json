@@ -1,9 +1,9 @@
 {
-  "id": "jinhsi",
-  "name": "금희",
-  "gender": "여",
-  "attribute": "spectro",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/jinhsi.webp",
-  "fullbody": "../images/characters/fullbody/jinhsi.webp"
+	"id": "jinhsi",
+	"name": "금희",
+	"gender": "여",
+	"attribute": "spectro",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/jinhsi.webp",
+	"fullbody": "../images/characters/fullbody/jinhsi.webp"
 }

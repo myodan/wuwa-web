@@ -1,9 +1,9 @@
 {
-  "id": "taoqi",
-  "name": "도기",
-  "gender": "여",
-  "attribute": "havoc",
-  "rarity": 4,
-  "portrait": "../images/characters/portraits/taoqi.webp",
-  "fullbody": "../images/characters/fullbody/taoqi.webp"
+	"id": "taoqi",
+	"name": "도기",
+	"gender": "여",
+	"attribute": "havoc",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/taoqi.webp",
+	"fullbody": "../images/characters/fullbody/taoqi.webp"
 }

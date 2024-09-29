@@ -1,5 +1,5 @@
 {
-  "id": "spectro",
-  "name": "회절",
-  "icon": "../images/attributes/spectro.png"
+	"id": "spectro",
+	"name": "회절",
+	"icon": "../images/attributes/spectro.png"
 }

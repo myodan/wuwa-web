@@ -1,5 +1,5 @@
 {
-  "id": "aero",
-  "name": "기류",
-  "icon": "../images/attributes/aero.png"
+	"id": "aero",
+	"name": "기류",
+	"icon": "../images/attributes/aero.png"
 }

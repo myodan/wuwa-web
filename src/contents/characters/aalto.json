@@ -1,9 +1,9 @@
 {
-  "id": "aalto",
-  "name": "알토",
-  "gender": "남",
-  "attribute": "aero",
-  "rarity": 4,
-  "portrait": "../images/characters/portraits/aalto.webp",
-  "fullbody": "../images/characters/fullbody/aalto.webp"
+	"id": "aalto",
+	"name": "알토",
+	"gender": "남",
+	"attribute": "aero",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/aalto.webp",
+	"fullbody": "../images/characters/fullbody/aalto.webp"
 }

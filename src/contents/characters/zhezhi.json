@@ -1,9 +1,9 @@
 {
-  "id": "zhezhi",
-  "name": "절지",
-  "gender": "여",
-  "attribute": "glacio",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/zhezhi.webp",
-  "fullbody": "../images/characters/fullbody/zhezhi.webp"
+	"id": "zhezhi",
+	"name": "절지",
+	"gender": "여",
+	"attribute": "glacio",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/zhezhi.webp",
+	"fullbody": "../images/characters/fullbody/zhezhi.webp"
 }

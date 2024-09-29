@@ -1,9 +1,9 @@
 {
-  "id": "mortefi",
-  "name": "모르테피",
-  "gender": "남",
-  "attribute": "fusion",
-  "rarity": 4,
-  "portrait": "../images/characters/portraits/mortefi.webp",
-  "fullbody": "../images/characters/fullbody/mortefi.webp"
+	"id": "mortefi",
+	"name": "모르테피",
+	"gender": "남",
+	"attribute": "fusion",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/mortefi.webp",
+	"fullbody": "../images/characters/fullbody/mortefi.webp"
 }

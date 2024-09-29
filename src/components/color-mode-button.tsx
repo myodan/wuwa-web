@@ -5,21 +5,21 @@ import { IconMoon, IconSun } from "@tabler/icons-react";
 import { useTheme } from "next-themes";
 
 export const ColorModeButton = () => {
-  const { theme, setTheme } = useTheme();
+	const { theme, setTheme } = useTheme();
 
-  const handleClick = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+	const handleClick = () => {
+		setTheme(theme === "light" ? "dark" : "light");
+	};
 
-  return (
-    <ClientOnly fallback={<Skeleton boxSize="10" />}>
-      <IconButton
-        onClick={handleClick}
-        variant="ghost"
-        aria-label="Color Mode Toggle Button"
-      >
-        {theme === "light" ? <IconSun /> : <IconMoon />}
-      </IconButton>
-    </ClientOnly>
-  );
+	return (
+		<ClientOnly fallback={<Skeleton boxSize="10" />}>
+			<IconButton
+				onClick={handleClick}
+				variant="ghost"
+				aria-label="Color Mode Toggle Button"
+			>
+				{theme === "light" ? <IconSun /> : <IconMoon />}
+			</IconButton>
+		</ClientOnly>
+	);
 };

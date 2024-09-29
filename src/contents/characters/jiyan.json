@@ -1,9 +1,9 @@
 {
-  "id": "jiyan",
-  "name": "기염",
-  "gender": "남",
-  "attribute": "aero",
-  "rarity": 5,
-  "portrait": "../images/characters/portraits/jiyan.webp",
-  "fullbody": "../images/characters/fullbody/jiyan.webp"
+	"id": "jiyan",
+	"name": "기염",
+	"gender": "남",
+	"attribute": "aero",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/jiyan.webp",
+	"fullbody": "../images/characters/fullbody/jiyan.webp"
 }

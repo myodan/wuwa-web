@@ -1,9 +1,9 @@
 {
-  "id": "sanhua",
-  "name": "산화",
-  "gender": "여",
-  "attribute": "glacio",
-  "rarity": 4,
-  "portrait": "../images/characters/portraits/sanhua.webp",
-  "fullbody": "../images/characters/fullbody/sanhua.webp"
+	"id": "sanhua",
+	"name": "산화",
+	"gender": "여",
+	"attribute": "glacio",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/sanhua.webp",
+	"fullbody": "../images/characters/fullbody/sanhua.webp"
 }
