@@ -1,42 +1,43 @@
 {
-  "name": "wuwa-web",
-  "version": "0.1.0",
-  "private": true,
-  "packageManager": "bun@1.1.26",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^3.0.0-next.20",
-    "@emotion/react": "^11.13.3",
-    "@hookform/resolvers": "^3.9.0",
-    "@tabler/icons-react": "^3.12.0",
-    "@vercel/speed-insights": "^1.0.12",
-    "es-hangul": "^2.1.0",
-    "next": "14.2.6",
-    "next-themes": "^0.3.0",
-    "next-view-transitions": "^0.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.53.0",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@chakra-ui/cli": "^3.0.0-next.18",
-    "@hookform/devtools": "^4.3.1",
-    "@types/node": "^22.5.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.6",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
-    "velite": "^0.1.1"
-  }
+	"name": "wuwa-web",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "bun@1.1.29",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^3.0.0-next.26",
+		"@emotion/react": "^11.13.3",
+		"@hookform/resolvers": "^3.9.0",
+		"@tabler/icons-react": "^3.19.0",
+		"@vercel/speed-insights": "^1.0.12",
+		"es-hangul": "^2.1.0",
+		"next": "14.2.13",
+		"next-themes": "^0.3.0",
+		"next-view-transitions": "^0.3.2",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-hook-form": "^7.53.0",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@chakra-ui/cli": "^3.0.0-next.26",
+		"@hookform/devtools": "^4.3.1",
+		"@types/node": "^22.7.4",
+		"@types/react": "^18.3.10",
+		"@types/react-dom": "^18.3.0",
+		"eslint": "^8.57.1",
+		"eslint-config-next": "14.2.13",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.2",
+		"velite": "^0.1.1"
+	},
+	"trustedDependencies": ["@vercel/speed-insights", "esbuild", "sharp"]
 }
