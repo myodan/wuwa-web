@@ -1,0 +1,9 @@
+{
+	"id": "youhu",
+	"name": "유호",
+	"gender": "여",
+	"attribute": "glacio",
+	"rarity": 4,
+	"portrait": "../images/characters/portraits/youhu.webp",
+	"fullbody": "../images/characters/fullbody/youhu.webp"
+}

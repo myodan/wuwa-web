@@ -1,0 +1,9 @@
+{
+	"id": "shorekeeper",
+	"name": "파수인",
+	"gender": "여",
+	"attribute": "spectro",
+	"rarity": 5,
+	"portrait": "../images/characters/portraits/shorekeeper.webp",
+	"fullbody": "../images/characters/fullbody/shorekeeper.webp"
+}
