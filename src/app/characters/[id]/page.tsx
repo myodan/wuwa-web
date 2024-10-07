@@ -46,7 +46,7 @@ const Home = ({ params: { id } }: Props) => {
 			flexDirection="column"
 			gap="4"
 		>
-			<Heading fontSize="3xl">캐릭터 정보</Heading>
+			<Heading fontSize="3xl">공명자 정보</Heading>
 			<HStack justifyContent="space-between">
 				<DataList.Root orientation="horizontal">
 					{Object.entries(character)
