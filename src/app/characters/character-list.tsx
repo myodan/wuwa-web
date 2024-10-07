@@ -1,6 +1,14 @@
 "use client";
 
-import { Grid, GridItem, HStack, Input, Text } from "@chakra-ui/react";
+import { attributes, characters } from "#contents";
+import {
+	Grid,
+	GridItem,
+	HStack,
+	Input,
+	Text,
+	createListCollection,
+} from "@chakra-ui/react";
 import { getChoseong } from "es-hangul";
 import { useState } from "react";
 import { Avatar } from "~/components/ui/avatar";
@@ -11,7 +19,6 @@ import {
 	SelectTrigger,
 	SelectValueText,
 } from "~/components/ui/select";
-import { attributes, characters } from "#contents";
 import { CharacterCard } from "./character-card";
 
 export const CharacterList = () => {
@@ -46,9 +53,11 @@ export const CharacterList = () => {
 			<GridItem>
 				<HStack>
 					<SelectRoot
-						items={attributes}
-						itemToString={(item) => item.name}
-						itemToValue={(item) => item.id}
+						collection={createListCollection({
+							items: attributes,
+							itemToString: (item) => item.name,
+							itemToValue: (item) => item.id,
+						})}
 						value={selectedAttributes}
 						onValueChange={(event) => setSelectedAttributes(event.value)}
 						multiple
@@ -61,15 +70,15 @@ export const CharacterList = () => {
 								<SelectItem
 									item={attribute}
 									key={attribute.id}
-									alignItems={"center"}
-									justifyContent={"space-between"}
+									alignItems="center"
+									justifyContent="space-between"
 								>
 									<Avatar
 										name={attribute.name}
 										src={attribute.icon.src}
-										size={"xs"}
+										size="xs"
 									/>
-									<Text flex={"1"}>{attribute.name}</Text>
+									<Text flex="1">{attribute.name}</Text>
 								</SelectItem>
 							))}
 						</SelectContent>

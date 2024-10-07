@@ -11,7 +11,7 @@
 		"format": "biome format --write ./src"
 	},
 	"dependencies": {
-		"@chakra-ui/react": "^3.0.0-next.26",
+		"@chakra-ui/react": "^3.0.0-next.28",
 		"@emotion/react": "^11.13.3",
 		"@hookform/resolvers": "^3.9.0",
 		"@tabler/icons-react": "^3.19.0",
