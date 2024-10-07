@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 const Home = () => {
 	return (
 		<Container
-			display={"flex"}
-			maxWidth={"7xl"}
-			paddingTop={"4"}
-			flexDirection={"column"}
-			gap={"4"}
+			display="flex"
+			maxWidth="7xl"
+			paddingTop="4"
+			flexDirection="column"
+			gap="4"
 		>
-			<Heading fontSize={"3xl"}>홈</Heading>
+			<Heading fontSize="3xl">홈</Heading>
 		</Container>
 	);
 };
