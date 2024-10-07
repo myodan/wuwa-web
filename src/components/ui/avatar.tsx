@@ -42,7 +42,6 @@ const AvatarFallback = forwardRef<HTMLDivElement, AvatarFallbackProps>(
 		return (
 			<ChakraAvatar.Fallback ref={ref} {...rest}>
 				{children}
-				{/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
 				{name != null && children == null && <>{getInitials(name)}</>}
 				{name == null && children == null && (
 					<ChakraAvatar.Icon asChild={!!icon}>{icon}</ChakraAvatar.Icon>

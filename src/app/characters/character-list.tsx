@@ -1,6 +1,5 @@
 "use client";
 
-import { attributes, characters } from "#contents";
 import {
 	Grid,
 	GridItem,
@@ -19,6 +18,7 @@ import {
 	SelectTrigger,
 	SelectValueText,
 } from "~/components/ui/select";
+import { attributes, characters } from "#contents";
 import { CharacterCard } from "./character-card";
 
 export const CharacterList = () => {

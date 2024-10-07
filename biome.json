@@ -7,7 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [".next", ".velite"]
 	},
 	"formatter": {
 		"enabled": true,

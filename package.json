@@ -7,8 +7,9 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "biome lint --write ./src",
-		"format": "biome format --write ./src"
+		"lint": "biome lint --write .",
+		"format": "biome format --write .",
+		"check": "biome check --write ."
 	},
 	"dependencies": {
 		"@chakra-ui/react": "^3.0.0-next.28",
@@ -17,7 +18,7 @@
 		"@tabler/icons-react": "^3.19.0",
 		"@vercel/speed-insights": "^1.0.12",
 		"es-hangul": "^2.1.0",
-		"next": "14.2.13",
+		"next": "14.2.14",
 		"next-themes": "^0.3.0",
 		"next-view-transitions": "^0.3.2",
 		"react": "^18.3.1",
@@ -26,11 +27,11 @@
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.2",
-		"@chakra-ui/cli": "^3.0.0-next.26",
+		"@biomejs/biome": "1.9.3",
+		"@chakra-ui/cli": "^3.0.0-next.28",
 		"@hookform/devtools": "^4.3.1",
 		"@types/node": "^22.7.4",
-		"@types/react": "^18.3.10",
+		"@types/react": "^18.3.11",
 		"@types/react-dom": "^18.3.0",
 		"typescript": "^5.6.2",
 		"velite": "^0.1.1"
