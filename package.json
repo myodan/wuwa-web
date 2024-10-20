@@ -2,7 +2,7 @@
 	"name": "wuwa-web",
 	"version": "0.1.0",
 	"private": true,
-	"packageManager": "bun@1.1.29",
+	"packageManager": "bun@1.1.30",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -12,7 +12,7 @@
 		"check": "biome check --write ."
 	},
 	"dependencies": {
-		"@chakra-ui/react": "^3.0.0-next.28",
+		"@chakra-ui/react": "^3.0.0-next.31",
 		"@emotion/react": "^11.13.3",
 		"@hookform/resolvers": "^3.9.0",
 		"@tabler/icons-react": "^3.19.0",
@@ -24,17 +24,17 @@
 		"next-view-transitions": "^0.3.2",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"react-hook-form": "^7.53.0",
+		"react-hook-form": "^7.53.1",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.3",
-		"@chakra-ui/cli": "^3.0.0-next.28",
+		"@biomejs/biome": "1.9.4",
+		"@chakra-ui/cli": "^3.0.0-next.31",
 		"@hookform/devtools": "^4.3.1",
-		"@types/node": "^22.7.4",
+		"@types/node": "^22.7.7",
 		"@types/react": "^18.3.11",
-		"@types/react-dom": "^18.3.0",
-		"typescript": "^5.6.2",
+		"@types/react-dom": "^18.3.1",
+		"typescript": "^5.6.3",
 		"velite": "^0.1.1"
 	},
 	"trustedDependencies": [
