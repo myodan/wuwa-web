@@ -6,14 +6,16 @@ import { notFound } from "next/navigation";
 import { characters } from "#contents";
 
 type Props = {
-	params: {
+	params: Promise<{
 		id: string;
-	};
+	}>;
 };
 
-export const generateMetadata = ({
-	params: { id },
-}: Props): Metadata | undefined => {
+export const generateMetadata = async ({
+	params,
+}: Props): Promise<Metadata | undefined> => {
+	const { id } = await params;
+
 	const character = characters.find((char) => char.id === id);
 
 	if (!character) {
@@ -31,7 +33,9 @@ export const generateStaticParams = () => {
 	}));
 };
 
-const Home = ({ params: { id } }: Props) => {
+const Home = async ({ params }: Props) => {
+	const { id } = await params;
+
 	const character = characters.find((char) => char.id === id);
 
 	if (!character) {
